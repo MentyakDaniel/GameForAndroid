@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CE44FC2-13DA-4846-8ED4-8F5157093067}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameForAndroid</RootNamespace>
+    <AssemblyName>GameForAndroid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <MandroidI18n />
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <MandroidI18n />
+    <AndroidSupportedAbis />
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Elements\Boosts\Boosts.cs" />
+    <Compile Include="Elements\Collision.cs" />
+    <Compile Include="Elements\Gameplay\Asteroid.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\EpilogBoss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level10Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level1Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level2Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level3Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level4Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level5Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level6Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level7Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level8Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\Level9Boss.cs" />
+    <Compile Include="Elements\Gameplay\Bosses\PrologieBoss.cs" />
+    <Compile Include="Elements\Gameplay\EnemyShip.cs" />
+    <Compile Include="Elements\Gameplay\Inventory.cs" />
+    <Compile Include="Elements\Gameplay\Player.cs" />
+    <Compile Include="Elements\Element.cs" />
+    <Compile Include="Elements\Ships\DamageDiller.cs" />
+    <Compile Include="Elements\Ships\SpiderWarrior.cs" />
+    <Compile Include="Elements\Ships\Ship.cs" />
+    <Compile Include="Elements\Ships\Tank.cs" />
+    <Compile Include="Elements\Ships\WhiteWarrior.cs" />
+    <Compile Include="Elements\Shots\DupletShot.cs" />
+    <Compile Include="Elements\Shots\OneShot.cs" />
+    <Compile Include="Elements\Shots\TrippleShot.cs" />
+    <Compile Include="Elements\Sounds.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Save\SaveObject.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="Elements\Shots\Shot.cs" />
+    <Compile Include="Elements\Stars.cs" />
+    <Compile Include="UI\Screens\GameOverScreen.cs" />
+    <Compile Include="UI\Screens\InventoryScreen.cs" />
+    <Compile Include="UI\Screens\MenuScreen.cs" />
+    <Compile Include="UI\Screens\ShopScreen.cs" />
+    <Compile Include="UI\Screens\PauseScreen.cs" />
+    <Compile Include="UI\Screens\StartScreen.cs" />
+    <Compile Include="UI\Screens\VictoryScreen.cs" />
+    <Compile Include="UI\Shop\Commodity.cs" />
+    <Compile Include="UI\Shop\NotBuying.cs" />
+    <Compile Include="UI\Shop\ShipCharacteristics.cs" />
+    <Compile Include="UI\Shop\Showcase.cs" />
+    <Compile Include="UI\TextButton.cs" />
+    <Compile Include="UI\ControlButton.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Screens\Screen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Content.mgcb" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.HashCode">
+      <Version>1.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.Android" Version="3.8.0.1641" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
